@@ -15,7 +15,7 @@ for (( ;; )); do
 		AMOUNT=$(( AMOUNT+7 ))
 
 		echo -e $PASS | umeed tx bank send ${wallet1} ${wallet2} ${AMOUNT}uumee --chain-id=umeevengers-1c --from wallet1 --fees=${FEE}uumee -y
-    echo -e $PASS | umeed tx bank send ${wallet2} ${wallet1} ${AMOUNT}uumee --chain-id=umeevengers-1c --from wallet2 --fees=${FEE}uumee -y
+		echo -e $PASS | umeed tx bank send ${wallet2} ${wallet1} ${AMOUNT}uumee --chain-id=umeevengers-1c --from wallet2 --fees=${FEE}uumee -y
 
 for (( timer=${DELAY}; timer>0; timer-- ))
        do
