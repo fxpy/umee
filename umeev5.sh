@@ -28,7 +28,6 @@ git clone --depth 1 --branch v0.3.0 https://github.com/umee-network/umee.git
 cd umee && make install
 umeed version
 umeed init ${UMEE_NODENAME} --chain-id $UMEE_CHAIN
-# wget -O $HOME/.umee/config/genesis.json "https://api.nodes.guru/umee-betanet-5-genesis.json"
 wget -O $HOME/.umee/config/genesis.json "https://raw.githubusercontent.com/umee-network/testnets/main/networks/umee-betanet-v5/genesis.json"
 sha256sum $HOME/.umee/config/genesis.json
 umeed unsafe-reset-all
