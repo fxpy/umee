@@ -24,7 +24,7 @@ go version
 
 cd $HOME
 rm -r $HOME/umee
-git clone --depth 1 --branch v0.3.0 https://github.com/umee-network/umee.git
+git clone --depth 1 --branch v0.7.4 https://github.com/umee-network/umee.git
 cd umee && make install
 umeed version
 umeed init ${UMEE_NODENAME} --chain-id $UMEE_CHAIN
